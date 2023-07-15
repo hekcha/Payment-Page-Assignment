@@ -12,6 +12,7 @@ import FaqQuestions from "./Components/FaqQuestions/FaqQuestions";
 import NeedHelpBox from "./Components/NeedHelpBox/NeedHelpBox";
 import FeatureCard from "./Components/FeatureCard/FeatureCard";
 import Footer from "./Components/Footer/Footer";
+import CountryFlag from "./Components/CountryFlag/CountryFlag";
 
 function App() {
   const subtexts = [
@@ -52,80 +53,80 @@ function App() {
     <div className="app">
       <Header />
       <div className="sm:flex sm:flex-col md:grid md:grid-cols-10 gap-4 sm:px-4 md:px-28 md:mt-24 sm:mt-6">
-        <div className="md:col-span-7 md:order-1 sm:order-2">
-          <div>
-            <div className="sm:hidden md:flex md:visible">
-              <PageTitle />
-            </div>
-            <div className="details ">
-              <Title text="Enter your details" subtext={subtexts[ 0 ]} />
-              <div className="my-4 sm:flex sm:flex-col md:grid md:grid-cols-2 gap-6">
-                <Input label="Full Name" defaultValue="Name" />
-                <Input label="Phone Number" defaultValue="+91 8233134123" />
-                <Input label="Email" defaultValue="mail@mail.com" />
-                <Input label="Confirm Email" defaultValue="dummy" />
-              </div>
-            </div>
-            <div className="additionalInfo">
-              <Title text="Additional Information" subtext={subtexts[ 1 ]} />
-              <div className="my-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input label="Full Name" defaultValue="Name" />
-                <Input label="Phone Number" defaultValue="+91 8233134123" />
-              </div>
-            </div>
-
-            <div className="paymentMode">
-              <Title text="Select your mode of payment" subtext={subtexts[ 2 ]} />
-              <div className="my-6 flex flex-row justify-between max-w-full">
-                <div className="cards flex justify-start">
-                  <img src={CreditCard} />
-                  <span className=" ml-2 sm:text-sm md:text-base">Credit & Debit Card</span>
-                </div>
-                <div className="flex justify-end">
-                  <input id="default-radio-1" type="radio" className="w-4 h-4 self-center accent-black " />
-                </div>
-              </div>
-              <div className="my-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input label="Name on Card" defaultValue="Tickete" />
-                <Input label="Card Number" defaultValue="1234 1234 1234 1234" />
-                <Input label="Expiry Date" defaultValue="06/26" />
-                <Input label="CVV/CVC" defaultValue="dummy" />
-              </div>
-              <hr />
-              <div className="my-6 flex flex-row justify-between max-w-full">
-                <div className="klarna flex justify-start">
-                  <img src={Klarna} />
-                  <span className=" ml-2 sm:text-sm md:text-base">Klarna</span>
-                </div>
-                <div className="flex justify-end ">
-                  <input id="default-radio-1" type="radio" className="w-4 h-4 self-center accent-black " />
-                </div>
-              </div>
-              <hr />
-
-            </div>
-
-            <div className="totalPrice my-4">
-              <Title text="Total Price" subtext={subtexts[ 3 ]} />
-            </div>
-            <div className="notification my-2 p-4 grid grid-flow-col justify-start gap-2">
-              <input type="radio" className="w-4 h-4 self-center accent-black " />
-              <span className="content-center col-span-9 text-xs font-semibold	">Receive travel tips, suggestions and offers in &lt;city&gt; by email</span>
-            </div>
-            <div className="tnc grid-rows-2 grid-flow-row-dense">
-              <div className="row-span-1 my-4">
-                <span className="row-span-1 text-xs leading-5">With payment, you agree to the general <a className="cursor-pointer text-[#1733B6] font-bold">terms and conditions of Tickete</a> & <a className="cursor-pointer  text-[#1733B6] font-bold">the activity provider</a>.</span>
-              </div>
-              <div className="row-span-1 my-1 ">
-                <button className="bg-black hover:bg-black-700 text-white font-bold py-3 px-4 rounded-xl sm:w-full md:w-[197px]" >
-                  <div className="flex flex-row text-[16px] justify-center">
-                    Confirm and pay
-                    <img src={ShieldCheckered} className="w-4 h-4 self-center mx-2" />
-                  </div>
-                </button>
-              </div>
+        <div className="md:col-span-7 md:order-1 sm:order-2 space-y-9">
+          <div className="sm:hidden md:flex md:visible mb-9">
+            <PageTitle />
+          </div>
+          <div className="details ">
+            <Title text="Enter your details" subtext={subtexts[ 0 ]} />
+            <div className="my-4 sm:flex sm:flex-col md:grid md:grid-cols-2 gap-6">
+              <Input label="Full Name" defaultValue="Name" />
+              <Input label="Phone Number" defaultValue="+91 8233134123" />
+              <Input label="Email" defaultValue="mail@mail.com" />
+              <Input label="Confirm Email" defaultValue="dummy" />
             </div>
           </div>
+          <div className="additionalInfo">
+            <Title text="Additional Information" subtext={subtexts[ 1 ]} />
+            <div className="my-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Input label="Full Name" defaultValue="Name" />
+              <Input label="Phone Number" defaultValue="+91 8233134123" />
+            </div>
+          </div>
+
+          <div className="paymentMode">
+            <Title text="Select your mode of payment" subtext={subtexts[ 2 ]} />
+            <div className="my-6 flex flex-row justify-between max-w-full">
+              <div className="cards flex justify-start">
+                <img src={CreditCard} />
+                <span className=" ml-2 sm:text-sm md:text-base">Credit & Debit Card</span>
+              </div>
+              <div className="flex justify-end">
+                <input id="default-radio-1" type="radio" className="w-4 h-4 self-center accent-black " />
+              </div>
+            </div>
+            <div className="my-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <CountryFlag />
+              <Input label="Name on Card" defaultValue="Tickete" />
+              <Input label="Card Number" defaultValue="XXXX XXXX XXX" />
+              <Input label="Expiry Date" defaultValue="06/26" />
+              <Input label="CVV/CVC" defaultValue="dummy" />
+            </div>
+            <hr />
+            <div className="my-6 flex flex-row justify-between max-w-full">
+              <div className="klarna flex justify-start">
+                <img src={Klarna} />
+                <span className=" ml-2 sm:text-sm md:text-base">Klarna</span>
+              </div>
+              <div className="flex justify-end ">
+                <input id="default-radio-1" type="radio" className="w-4 h-4 self-center accent-black " />
+              </div>
+            </div>
+            <hr />
+
+          </div>
+
+          <div className="totalPrice my-4">
+            <Title text="Total Price" subtext={subtexts[ 3 ]} />
+          </div>
+          <div className="notification my-2 p-4 grid grid-flow-col justify-start gap-2">
+            <input type="radio" className="w-4 h-4 self-center accent-black " />
+            <span className="content-center col-span-9 text-xs font-semibold	">Receive travel tips, suggestions and offers in &lt;city&gt; by email</span>
+          </div>
+          <div className="tnc grid-rows-2 grid-flow-row-dense">
+            <div className="row-span-1 my-4">
+              <span className="row-span-1 text-xs leading-5">With payment, you agree to the general <a className="cursor-pointer text-[#1733B6] font-bold">terms and conditions of Tickete</a> & <a className="cursor-pointer  text-[#1733B6] font-bold">the activity provider</a>.</span>
+            </div>
+            <div className="row-span-1 my-1 ">
+              <button className="bg-black hover:bg-black-700 text-white font-bold py-3 px-4 rounded-xl sm:w-full md:w-[197px]" >
+                <div className="flex flex-row text-[16px] justify-center">
+                  Confirm and pay
+                  <img src={ShieldCheckered} className="w-4 h-4 self-center mx-2" />
+                </div>
+              </button>
+            </div>
+          </div>
+
         </div>
         <div className="md:col-span-3 md:order-2 sm:order-1">
           <div className="sm:visible md:hidden">

@@ -37,7 +37,7 @@ function Header() {
       className={`headerComponent sticky ${ scrollDirection === "down" ? "-top-24" : "top-0"
         } flex justify-between transition-all duration-500 px-20 w-full`}
     >
-      <div className="header-container flex justify-between sm:w-full md:w-full">
+      <div className="header-container flex justify-between  sm:w-full md:w-full">
         <img
           src={Logo}
           alt="logo"
