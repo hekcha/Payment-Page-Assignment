@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Paytment-Page-Assignment/static/css/main.5307ecac.css",
-    "main.js": "/Paytment-Page-Assignment/static/js/main.69b1779d.js",
+    "main.css": "/Paytment-Page-Assignment/static/css/main.ae84a6db.css",
+    "main.js": "/Paytment-Page-Assignment/static/js/main.1130c58e.js",
     "static/js/787.ba48e1ca.chunk.js": "/Paytment-Page-Assignment/static/js/787.ba48e1ca.chunk.js",
     "static/media/rectangle.png": "/Paytment-Page-Assignment/static/media/rectangle.4952e1940b38abe43312.png",
     "static/media/Logo.svg": "/Paytment-Page-Assignment/static/media/Logo.338d56341d702cd1b99e7dc33a1cd754.svg",
@@ -21,12 +21,12 @@
     "index.html": "/Paytment-Page-Assignment/index.html",
     "static/media/ShieldCheckered.svg": "/Paytment-Page-Assignment/static/media/ShieldCheckered.2b39f4499aac00322da813a48f29a1ba.svg",
     "static/media/ShieldCheckeredBlue.svg": "/Paytment-Page-Assignment/static/media/ShieldCheckeredBlue.57bd815a8e10c6d32e2486bbd6f8375e.svg",
-    "main.5307ecac.css.map": "/Paytment-Page-Assignment/static/css/main.5307ecac.css.map",
-    "main.69b1779d.js.map": "/Paytment-Page-Assignment/static/js/main.69b1779d.js.map",
+    "main.ae84a6db.css.map": "/Paytment-Page-Assignment/static/css/main.ae84a6db.css.map",
+    "main.1130c58e.js.map": "/Paytment-Page-Assignment/static/js/main.1130c58e.js.map",
     "787.ba48e1ca.chunk.js.map": "/Paytment-Page-Assignment/static/js/787.ba48e1ca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5307ecac.css",
-    "static/js/main.69b1779d.js"
+    "static/css/main.ae84a6db.css",
+    "static/js/main.1130c58e.js"
   ]
 }
